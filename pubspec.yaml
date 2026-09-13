@@ -18,3 +18,18 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - lib/assets/imgs/
+
+  fonts: 
+    - family: Sematary_Medium
+      fonts:
+        - asset: lib/assets/font/Sematary_Medium.ttf
+
+    - family: MADE_Okine_Sans_bold
+      fonts:
+        - asset: lib/assets/font/MADE_Okine_Sans_bold.otf
+
+    - family: Satoshi_Variable
+      fonts:
+        - asset: lib/assets/font/Satoshi_Variable.ttf

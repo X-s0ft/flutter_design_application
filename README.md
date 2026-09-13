@@ -26,7 +26,7 @@ Testing my skills in transferring design from figma to flutter
 
 ### **Packages**
 
-
+    go_router: ^18.0.1
 
 ## **Application**
 
