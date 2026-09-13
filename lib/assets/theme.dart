@@ -5,12 +5,16 @@ import 'package:flutter_design_application/assets/colors.dart';
 // MADE Okine bold
 // Satoshi bold
 final texttheme = TextTheme(
-  titleLarge: _text.copyWith(fontSize: 128),
-  titleMedium: _text.copyWith(fontSize: 96),
-  titleSmall: _text.copyWith(fontSize: 64),
+  // Title
+  titleLarge: TextStyle(fontSize: 128),
+  titleMedium: TextStyle(fontSize: 96),
+  titleSmall: TextStyle(fontSize: 64),
+  //Body
+  bodyMedium: TextStyle(),
+  bodySmall: TextStyle(fontSize: 16, fontFamily: 'Satoshi_Variable'),
 );
 
-final _text = TextStyle(color: blanc);
+// final _text = TextStyle(color: blanc);
 
 // TODO: Создать главную тему
 final thememain = ThemeData(
@@ -24,7 +28,8 @@ final thememain = ThemeData(
   // TODO: Дописать визуал кнопки
   textButtonTheme: TextButtonThemeData(
     style: TextButton.styleFrom(
-      textStyle: TextStyle(fontFamily: 'Satoshi_Variable'),
+      overlayColor: Colors.transparent,
+      textStyle: TextStyle(fontFamily: 'Satoshi_Variable', fontSize: 16),
       foregroundColor: noir,
     ),
   ),

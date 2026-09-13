@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 class HolderWidget extends StatelessWidget {
   const HolderWidget(this.child, {super.key});
   final Widget child;
+
+  // TODO: Поработать над адаптацией интерфейса под разные разрешения
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,10 +33,24 @@ class HolderWidget extends StatelessWidget {
                   SizedBox(
                     child: Row(
                       spacing: 29,
-                      children: [Text('Mentions légales'), Text('Contact')],
+                      children: [
+                        Text(
+                          'Mentions légales',
+                          style: Theme.of(context).textTheme.bodySmall!
+                              .copyWith(decoration: TextDecoration.underline),
+                        ),
+                        Text(
+                          'Contact',
+                          style: Theme.of(context).textTheme.bodySmall!
+                              .copyWith(decoration: TextDecoration.underline),
+                        ),
+                      ],
                     ),
                   ),
-                  Text('Studio24 © 2025'),
+                  Text(
+                    'Studio24 © 2025',
+                    style: Theme.of(context).textTheme.bodySmall,
+                  ),
                 ],
               ),
             ],
