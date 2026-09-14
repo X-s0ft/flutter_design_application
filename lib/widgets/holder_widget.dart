@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class HolderWidget extends StatelessWidget {
   const HolderWidget(this.child, {super.key});
@@ -11,9 +12,24 @@ class HolderWidget extends StatelessWidget {
       appBar: AppBar(
         title: Image.asset('lib/assets/imgs/logo.png', width: 158, height: 63),
         actions: [
-          TextButton(onPressed: () {}, child: Text('Accueil')),
-          TextButton(onPressed: () {}, child: Text('Actuellement')),
-          TextButton(onPressed: () {}, child: Text('Contact')),
+          TextButton(
+            onPressed: () {
+              context.go('/');
+            },
+            child: Text('Accueil'),
+          ),
+          TextButton(
+            onPressed: () {
+              context.go('/location');
+            },
+            child: Text('Actuellement'),
+          ),
+          TextButton(
+            onPressed: () {
+              context.go('/contact');
+            },
+            child: Text('Contact'),
+          ),
         ],
       ),
       body: Container(
