@@ -6,6 +6,6 @@ class ContactPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HolderWidget(Text('ContactPage'));
+    return HolderWidget([Text('ContactPage')]);
   }
 }

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_design_application/widgets/holder_widget.dart';
+import '../widgets/containers.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return HolderWidget(Text('HomePage'));
+    return HolderWidget([Text('HomePage')]);
   }
 }

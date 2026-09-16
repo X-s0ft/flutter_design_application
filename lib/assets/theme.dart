@@ -14,7 +14,7 @@ final texttheme = TextTheme(
   bodySmall: TextStyle(fontSize: 16, fontFamily: 'Satoshi_Variable'),
 );
 
-// final _text = TextStyle(color: blanc);
+final _text = TextStyle();
 
 // TODO: Создать главную тему
 final thememain = ThemeData(
@@ -22,6 +22,8 @@ final thememain = ThemeData(
   scaffoldBackgroundColor: blanc,
   appBarTheme: AppBarTheme(
     toolbarHeight: 100,
+    elevation: 0,
+    surfaceTintColor: blanc,
     backgroundColor: blanc,
     actionsPadding: EdgeInsets.all(31),
   ),
