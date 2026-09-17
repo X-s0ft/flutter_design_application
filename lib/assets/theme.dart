@@ -14,7 +14,7 @@ final texttheme = TextTheme(
   bodySmall: TextStyle(fontSize: 16, fontFamily: 'Satoshi_Variable'),
 );
 
-final _text = TextStyle();
+final _text = TextStyle(); 
 
 // TODO: Создать главную тему
 final thememain = ThemeData(
