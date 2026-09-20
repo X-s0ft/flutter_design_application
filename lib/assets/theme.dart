@@ -14,13 +14,15 @@ final texttheme = TextTheme(
   bodySmall: TextStyle(fontSize: 16, fontFamily: 'Satoshi_Variable'),
 );
 
-final _text = TextStyle(); 
+final _text = TextStyle();
 
 // TODO: Создать главную тему
 final thememain = ThemeData(
   textTheme: texttheme,
   scaffoldBackgroundColor: blanc,
   appBarTheme: AppBarTheme(
+    scrolledUnderElevation: 0,
+    titleSpacing: 55,
     toolbarHeight: 100,
     elevation: 0,
     surfaceTintColor: blanc,

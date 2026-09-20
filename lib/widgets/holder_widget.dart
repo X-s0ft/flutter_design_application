@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 class HolderWidget extends StatelessWidget {
-  const HolderWidget(this.children, {super.key});
-  final List<Widget> children;
-
-  // TODO: Поработать над адаптацией интерфейса под разные разрешения
+  const HolderWidget(this.child, {super.key});
+  final Widget child;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,12 +31,12 @@ class HolderWidget extends StatelessWidget {
         ],
       ),
       body: Container(
-        padding: EdgeInsets.all(45),
+        padding: EdgeInsets.fromLTRB(44, 0, 44, 20),
         child: SingleChildScrollView(
           child: Column(
             spacing: 112,
             children: [
-              Center(child: Column(spacing: 83, children: children)),
+              Center(child: child),
               LayoutBuilder(
                 builder: (context, constraints) {
                   if (constraints.maxWidth < 550) {

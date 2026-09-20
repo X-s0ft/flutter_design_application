@@ -6,6 +6,6 @@ class LocationPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HolderWidget([Text('LocationPage')]);
+    return HolderWidget(Text('LocationPage'));
   }
 }
