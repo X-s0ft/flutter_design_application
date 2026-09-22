@@ -14,15 +14,15 @@ class HomePage extends StatelessWidget {
         children: [
           LayoutBuilder(
             builder: (context, constraints) {
-              if (constraints.maxWidth > 1380) {
+              if (constraints.maxWidth > 1450) {
                 return SizedBox(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 2,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     spacing: 27,
                     children: [
                       Container(
+                        width: 900,
                         padding: EdgeInsets.fromLTRB(33, 33, 0, 10),
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
@@ -31,8 +31,7 @@ class HomePage extends StatelessWidget {
                             const Radius.circular(40),
                           ),
                         ),
-                        width: MediaQuery.of(context).size.width / 2,
-                        height: MediaQuery.of(context).size.height / 2,
+                        // width: MediaQuery.of(context).size.width / 2,
                         child: Row(
                           spacing: 65,
                           children: [
@@ -60,7 +59,6 @@ class HomePage extends StatelessWidget {
                             Image.asset(
                               'lib/assets/imgs/item_1.png',
                               width: MediaQuery.of(context).size.width / 4,
-                              height: MediaQuery.of(context).size.height / 2,
                             ),
                           ],
                         ),
@@ -68,11 +66,13 @@ class HomePage extends StatelessWidget {
                       Column(
                         spacing: 30,
                         children: [
-                          EhibitionTainer(),
+                          EhibitionTainer(479, 377),
                           RedTainer(
                             'Vous avez des questions ?',
                             'Contactez-nous',
                             'lib/assets/imgs/vector.png',
+                            479,
+                            212,
                           ),
                         ],
                       ),
@@ -81,14 +81,13 @@ class HomePage extends StatelessWidget {
                 );
               } else {
                 return SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     spacing: 27,
                     children: [
                       Container(
+                        width: 770,
                         padding: EdgeInsets.fromLTRB(33, 33, 0, 10),
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
@@ -97,8 +96,6 @@ class HomePage extends StatelessWidget {
                             const Radius.circular(40),
                           ),
                         ),
-                        width: MediaQuery.of(context).size.width / 1.4,
-                        height: MediaQuery.of(context).size.height / 2,
                         child: Row(
                           spacing: 65,
                           children: [
@@ -123,6 +120,19 @@ class HomePage extends StatelessWidget {
                                 ),
                               ],
                             ),
+                            LayoutBuilder(
+                              builder: (context, constraints) {
+                                if (constraints.maxWidth > 500) {
+                                  return Image.asset(
+                                    'lib/assets/imgs/item_1.png',
+                                    width:
+                                        MediaQuery.of(context).size.width / 4,
+                                  );
+                                } else {
+                                  return SizedBox();
+                                }
+                              },
+                            ),
                           ],
                         ),
                       ),
@@ -131,11 +141,13 @@ class HomePage extends StatelessWidget {
                         // crossAxisAlignment: CrossAxisAlignment.center,
                         spacing: 75,
                         children: [
-                          EhibitionTainer(),
+                          EhibitionTainer(424, 238),
                           RedTainer(
                             'Vous avez des questions ?',
                             'Contactez-nous',
                             'lib/assets/imgs/vector.png',
+                            238,
+                            236,
                           ),
                         ],
                       ),
