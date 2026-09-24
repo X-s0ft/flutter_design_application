@@ -29,15 +29,7 @@ class EhibitionTainer extends StatelessWidget {
               Text('Francès Marion', style: TextStyle(color: Colors.white)),
             ],
           ),
-          LayoutBuilder(
-            builder: (context, constraints) {
-              if (constraints.maxWidth < 100) {
-                return Image.asset('lib/assets/imgs/item_2.png');
-              } else {
-                return SizedBox();
-              }
-            },
-          ),
+          Image.asset('lib/assets/imgs/item_2.png'),
         ],
       ),
     );

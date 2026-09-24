@@ -31,7 +31,6 @@ class HomePage extends StatelessWidget {
                             const Radius.circular(40),
                           ),
                         ),
-                        // width: MediaQuery.of(context).size.width / 2,
                         child: Row(
                           spacing: 65,
                           children: [
@@ -96,7 +95,7 @@ class HomePage extends StatelessWidget {
                             const Radius.circular(40),
                           ),
                         ),
-                        child: Row(
+                        child: Wrap(
                           spacing: 65,
                           children: [
                             Column(
@@ -136,9 +135,9 @@ class HomePage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        // crossAxisAlignment: CrossAxisAlignment.center,
+                      Wrap(
+                        alignment: WrapAlignment.center,
+                        runSpacing: 75,
                         spacing: 75,
                         children: [
                           EhibitionTainer(424, 238),
@@ -159,44 +158,44 @@ class HomePage extends StatelessWidget {
           ),
 
           // Second objects (adaptive == false)
-          Row(
-            spacing: 22,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Column(
-                spacing: 21,
-                children: [
-                  TextTainer('Pionnière du cinéma', 'text'),
-                  Image.asset(
-                    width: 712,
-                    height: 305,
-                    'lib/assets/imgs/itemgroup_1.png',
-                  ),
-                ],
-              ),
-              AcressTeinet('Ida Lupino', 'lib/assets/imgs/item_3.png'),
-            ],
-          ),
+          // Row(
+          //   spacing: 22,
+          //   mainAxisAlignment: MainAxisAlignment.center,
+          //   children: [
+          //     Column(
+          //       spacing: 21,
+          //       children: [
+          //         TextTainer('Pionnière du cinéma', 'text'),
+          //         Image.asset(
+          //           width: 712,
+          //           height: 305,
+          //           'lib/assets/imgs/itemgroup_1.png',
+          //         ),
+          //       ],
+          //     ),
+          //     AcressTeinet('Ida Lupino', 'lib/assets/imgs/item_3.png'),
+          //   ],
+          // ),
 
           // Third objects (adaptive == false)
-          Row(
-            spacing: 22,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              AcressTeinet('Bette Davis', 'lib/assets/imgs/item_4.png'),
-              Column(
-                spacing: 21,
-                children: [
-                  TextTainer('Une icône du cinéma', 'text'),
-                  Image.asset(
-                    width: 712,
-                    height: 305,
-                    'lib/assets/imgs/itemgroup_2.png',
-                  ),
-                ],
-              ),
-            ],
-          ),
+          // Row(
+          //       spacing: 22,
+          //       mainAxisAlignment: MainAxisAlignment.center,
+          //       children: [
+          //         AcressTeinet('Bette Davis', 'lib/assets/imgs/item_4.png'),
+          //         Column(
+          //           spacing: 21,
+          //           children: [
+          //             TextTainer('Une icône du cinéma', 'text'),
+          //             Image.asset(
+          //               width: 712,
+          //               height: 305,
+          //               'lib/assets/imgs/itemgroup_2.png',
+          //             ),
+          //           ],
+          //         ),
+          //       ],
+          //     ),
         ],
       ),
     );
