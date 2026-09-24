@@ -6,12 +6,12 @@ import 'package:flutter_design_application/assets/colors.dart';
 // Satoshi bold
 final _texttheme = TextTheme(
   // Title
-  titleLarge: TextStyle(fontSize: 128),
-  titleMedium: TextStyle(fontSize: 96),
-  titleSmall: TextStyle(fontSize: 64),
+  titleLarge: _titlebold.copyWith(fontSize: 128),
+  titleMedium: _titlebold.copyWith(fontSize: 96),
+  titleSmall: _titlemed.copyWith(fontSize: 64),
   //Body
   bodyMedium: TextStyle(),
-  bodySmall: TextStyle(fontSize: 16),
+  bodySmall: _text.copyWith(fontSize: 16),
 );
 
 final _titlemed = TextStyle(fontFamily: 'Sematary_Medium', color: blanc);
