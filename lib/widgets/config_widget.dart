@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_design_application/assets/theme.dart';
 import 'package:flutter_design_application/router/router.dart';

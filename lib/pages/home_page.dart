@@ -33,17 +33,19 @@ class HomePage extends StatelessWidget {
                         ),
                         child: Row(
                           spacing: 65,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   'Actuellement',
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextTheme.of(context).bodyMedium,
                                 ),
                                 Text(
-                                  'Alice Guy Blaché',
-                                  style: TextStyle(color: Colors.white),
+                                  softWrap: true,
+                                  'Alice Guy\nBlaché',
+                                  style: TextTheme.of(context).titleMedium,
                                 ),
                                 Text(
                                   'Du 24 mars au 24 mai 2025 de 10H à 18H',

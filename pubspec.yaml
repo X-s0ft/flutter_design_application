@@ -22,14 +22,14 @@ flutter:
     - lib/assets/imgs/
 
   fonts: 
-    - family: Sematary_Medium
+    - family: Satoshi_Regular
       fonts:
-        - asset: lib/assets/font/Sematary_Medium.ttf
+        - asset: lib/assets/font/Satoshi_Regular.otf
 
-    - family: MADE_Okine_Sans_bold
+    - family: Satoshi_Medium
       fonts:
-        - asset: lib/assets/font/MADE_Okine_Sans_bold.otf
+        - asset: lib/assets/font/Satoshi_Medium.otf
 
-    - family: Satoshi_Variable
+    - family: Satoshi_Bold
       fonts:
-        - asset: lib/assets/font/Satoshi_Variable.ttf
+        - asset: lib/assets/font/Satoshi_Bold.otf

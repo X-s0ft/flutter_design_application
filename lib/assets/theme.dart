@@ -10,7 +10,7 @@ final _texttheme = TextTheme(
   titleMedium: _titlebold.copyWith(fontSize: 96),
   titleSmall: _titlemed.copyWith(fontSize: 64),
   //Body
-  bodyMedium: TextStyle(),
+  bodyMedium: _text.copyWith(fontSize: 24),
   bodySmall: _text.copyWith(fontSize: 16),
 );
 
