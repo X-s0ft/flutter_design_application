@@ -19,7 +19,7 @@ class RedTainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(33, 33, 33, 10),
+      padding: EdgeInsets.fromLTRB(25, 33, 25, 10),
       width: width,
       height: height,
       decoration: BoxDecoration(

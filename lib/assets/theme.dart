@@ -11,7 +11,7 @@ final _texttheme = TextTheme(
   titleSmall: _titlemed.copyWith(fontSize: 64),
   //Body
   bodyMedium: _text.copyWith(fontSize: 24),
-  bodySmall: _text.copyWith(fontSize: 16),
+  bodySmall: _text.copyWith(fontSize: 16, color: Colors.black),
 );
 
 final _titlemed = TextStyle(fontFamily: 'Sematary_Medium', color: blanc);
