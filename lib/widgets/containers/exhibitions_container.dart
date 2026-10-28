@@ -3,33 +3,31 @@ import 'package:flutter/material.dart';
 import '../../assets/colors.dart';
 
 class EhibitionTainer extends StatelessWidget {
-  const EhibitionTainer(this.width, this.height, {super.key});
-  final double height;
-  final double width;
+  const EhibitionTainer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(33, 33, 0, 10),
-      width: width,
-      height: height,
+      padding: EdgeInsets.fromLTRB(0, 33, 0, 20),
+      width: 505,
+      height: 377,
       decoration: BoxDecoration(
         color: noir,
         borderRadius: BorderRadius.all(Radius.circular(30)),
       ),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                'Expositions à venir',
-                style: TextStyle(color: Colors.white),
-              ),
-              Text('en 2025', style: TextStyle(color: Colors.white)),
-              Text('Francès Marion', style: TextStyle(color: Colors.white)),
+              Text('Expositions \nà venir \nen 2025 '),
+              Text('Francès \nMarion'),
             ],
           ),
-          Image.asset('lib/assets/imgs/item_2.png'),
+
+          Image.asset('lib/assets/imgs/item_2.png', height: 290),
         ],
       ),
     );

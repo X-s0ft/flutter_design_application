@@ -7,7 +7,7 @@ import 'package:flutter_design_application/assets/colors.dart';
 final _texttheme = TextTheme(
   // Title
   titleLarge: _titlebold.copyWith(fontSize: 128),
-  titleMedium: _titlebold.copyWith(fontSize: 96),
+  titleMedium: _titlebold.copyWith(fontSize: 76),
   titleSmall: _titlemed.copyWith(fontSize: 64),
   //Body
   bodyMedium: _text.copyWith(fontSize: 24),

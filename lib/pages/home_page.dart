@@ -12,152 +12,87 @@ class HomePage extends StatelessWidget {
       Column(
         spacing: 45,
         children: [
-          // TODO: Переделать
-          // First layer objects
-          // LayoutBuilder(
-          //   builder: (context, constraints) {
-          //     if (constraints.maxWidth > 1590) {
-          //       return SizedBox(
-          //         child: Row(
-          //           mainAxisAlignment: MainAxisAlignment.center,
-          //           spacing: 27,
-          //           children: [
-          //             Container(
-          //               width: 860,
-          //               height: 620,
-          //               padding: EdgeInsets.fromLTRB(33, 33, 0, 10),
-          //               decoration: BoxDecoration(
-          //                 shape: BoxShape.rectangle,
-          //                 color: noir,
-          //                 borderRadius: BorderRadius.all(
-          //                   const Radius.circular(40),
-          //                 ),
-          //               ),
-          //               child: Row(
-          //                 spacing: 65,
-          //                 crossAxisAlignment: CrossAxisAlignment.end,
-          //                 children: [
-          //                   Column(
-          //                     crossAxisAlignment: CrossAxisAlignment.start,
-          //                     children: [
-          //                       Text(
-          //                         'Actuellement',
-          //                         style: TextTheme.of(context).bodyMedium,
-          //                       ),
-          //                       Text(
-          //                         softWrap: true,
-          //                         'Alice Guy\nBlaché',
-          //                         style: TextTheme.of(context).titleMedium,
-          //                       ),
-          //                       Text(
-          //                         'Du 24 mars au 24 mai 2025 de 10H à 18H',
-          //                         style: TextStyle(color: Colors.white),
-          //                       ),
-          //                       Text(
-          //                         '22 Rue du Départ, 75015 Paris',
-          //                         style: TextStyle(color: Colors.white),
-          //                       ),
-          //                     ],
-          //                   ),
-          //                   Image.asset(
-          //                     'lib/assets/imgs/item_1.png',
-          //                     width: 290,
-          //                   ),
-          //                 ],
-          //               ),
-          //             ),
-          //             Column(
-          //               spacing: 30,
-          //               children: [
-          //                 EhibitionTainer(505, 377),
-          //                 RedTainer(
-          //                   'Vous avez des questions ?',
-          //                   'Contactez-nous',
-          //                   'lib/assets/imgs/vector.png',
-          //                   479,
-          //                   212,
-          //                 ),
-          //               ],
-          //             ),
-          //           ],
-          //         ),
-          //       );
-          //     } else {
-          //       return SizedBox(
-          //         child: Column(
-          //           spacing: 27,
-          //           children: [
-          //             Container(
-          //               width: 770,
-          //               padding: EdgeInsets.fromLTRB(33, 33, 0, 10),
-          //               decoration: BoxDecoration(
-          //                 shape: BoxShape.rectangle,
-          //                 color: noir,
-          //                 borderRadius: BorderRadius.all(
-          //                   const Radius.circular(40),
-          //                 ),
-          //               ),
-          //               child: Wrap(
-          //                 spacing: 65,
-          //                 children: [
-          //                   Column(
-          //                     crossAxisAlignment: CrossAxisAlignment.start,
-          //                     children: [
-          //                       Text(
-          //                         'Actuellement',
-          //                         style: TextStyle(color: Colors.white),
-          //                       ),
-          //                       Text(
-          //                         'Alice Guy Blaché',
-          //                         style: TextStyle(color: Colors.white),
-          //                       ),
-          //                       Text(
-          //                         'Du 24 mars au 24 mai 2025 de 10H à 18H',
-          //                         style: TextStyle(color: Colors.white),
-          //                       ),
-          //                       Text(
-          //                         '22 Rue du Départ, 75015 Paris',
-          //                         style: TextStyle(color: Colors.white),
-          //                       ),
-          //                     ],
-          //                   ),
-          //                   LayoutBuilder(
-          //                     builder: (context, constraints) {
-          //                       if (constraints.maxWidth > 500) {
-          //                         return Image.asset(
-          //                           'lib/assets/imgs/item_1.png',
-          //                           width:
-          //                               MediaQuery.of(context).size.width / 4,
-          //                         );
-          //                       } else {
-          //                         return SizedBox();
-          //                       }
-          //                     },
-          //                   ),
-          //                 ],
-          //               ),
-          //             ),
-          //             Wrap(
-          //               alignment: WrapAlignment.center,
-          //               runSpacing: 75,
-          //               spacing: 75,
-          //               children: [
-          //                 EhibitionTainer(424, 238),
-          //                 RedTainer(
-          //                   'Vous avez des \n questions?',
-          //                   'Contactez-nous',
-          //                   'lib/assets/imgs/vector.png',
-          //                   238,
-          //                   236,
-          //                 ),
-          //               ],
-          //             ),
-          //           ],
-          //         ),
-          //       );
-          //     }
-          //   },
-          // ),
+          // First Layout
+          Wrap(
+            runSpacing: 50,
+            spacing: 35,
+            children: [
+              Container(
+                width: 1015,
+                height: 619,
+                padding: EdgeInsets.fromLTRB(33, 33, 0, 10),
+                decoration: BoxDecoration(
+                  shape: BoxShape.rectangle,
+                  color: noir,
+                  borderRadius: BorderRadius.all(const Radius.circular(40)),
+                ),
+                child: Row(
+                  spacing: 65,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        spacing: 30,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Actuellement',
+                            style: TextTheme.of(context).bodyMedium,
+                          ),
+                          Text(
+                            'Alice Guy Blaché',
+                            softWrap: true,
+                            style: TextTheme.of(context).titleMedium,
+                          ),
+                          Text(
+                            'Du 24 mars au 24 mai 2025 de 10H à 18H',
+                            style: TextTheme.of(
+                              context,
+                            ).bodySmall!.copyWith(color: Colors.white),
+                          ),
+                          Text(
+                            '22 Rue du Départ, 75015 Paris',
+                            style: TextTheme.of(
+                              context,
+                            ).bodySmall!.copyWith(color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ),
+                    LayoutBuilder(
+                      builder: (context, constraints) {
+                        if (MediaQuery.of(context).size.width >= 1040) {
+                          return Image.asset(
+                            'lib/assets/imgs/item_1.png',
+                            height: 550,
+                          );
+                        } else {
+                          return SizedBox();
+                        }
+                      },
+                    ),
+                  ],
+                ),
+              ),
+              Wrap(
+                runSpacing: 50,
+                spacing: 35,
+                direction: MediaQuery.of(context).size.width <= 1650
+                    ? Axis.horizontal
+                    : Axis.vertical,
+                children: [
+                  EhibitionTainer(),
+                  RedTainer(
+                    'Vous avez des questions ?',
+                    'Contactez-nous',
+                    'lib/assets/imgs/vector.png',
+                    479,
+                    212,
+                  ),
+                ],
+              ),
+            ],
+          ),
 
           // Second layer objects
           Wrap(
@@ -166,8 +101,12 @@ class HomePage extends StatelessWidget {
             alignment: WrapAlignment.center,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
-              Column(
-                spacing: 40,
+              Wrap(
+                spacing: 35,
+                runSpacing: 50,
+                direction: MediaQuery.of(context).size.width > 1000
+                    ? Axis.vertical
+                    : Axis.horizontal,
                 children: [
                   TextTainer('Pionnière du cinéma', 'text'),
                   Image.asset(
@@ -177,6 +116,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+
               AcressTeinet('Ida Lupino', 'lib/assets/imgs/item_3.png'),
             ],
           ),
@@ -185,12 +125,17 @@ class HomePage extends StatelessWidget {
           Wrap(
             runSpacing: 50,
             spacing: 35,
+            direction: Axis.horizontal,
             alignment: WrapAlignment.center,
             crossAxisAlignment: WrapCrossAlignment.center,
             children: [
               AcressTeinet('Bette Davis', 'lib/assets/imgs/item_4.png'),
-              Column(
-                spacing: 40,
+              Wrap(
+                spacing: 35,
+                runSpacing: 50,
+                direction: MediaQuery.of(context).size.width > 1000
+                    ? Axis.vertical
+                    : Axis.horizontal,
                 children: [
                   TextTainer('Une icône du cinéma', 'text'),
                   Image.asset(
