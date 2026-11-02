@@ -9,7 +9,7 @@ class TextTainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(29, 23, 0, 29),
+      padding: EdgeInsets.fromLTRB(29, 23, 10, 29),
       width: 712,
       height: 367,
       decoration: BoxDecoration(
@@ -20,8 +20,19 @@ class TextTainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(headliner),
-          Text(text, softWrap: true),
+          Text(
+            headliner,
+            style: TextTheme.of(
+              context,
+            ).bodyMedium!.copyWith(color: Colors.black),
+          ),
+          Text(
+            text,
+            softWrap: true,
+            style: TextTheme.of(
+              context,
+            ).bodySmall!.copyWith(color: Colors.black),
+          ),
           OutlinedButton(onPressed: null, child: Text('Exposition terminé')),
         ],
       ),

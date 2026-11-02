@@ -6,6 +6,24 @@ class LocationPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HolderWidget(Text('LocationPage'));
+    return HolderWidget(
+      Wrap(
+        children: [
+          Col
+          Text('Alice Guy Blaché', style: TextStyle(color: Colors.black)),
+          Text(
+            "Du 24 mars au 24 mai 2025 de 10H à 18H \n22 Rue du Départ, 75015 Paris",
+            style: TextStyle(color: Colors.black),
+          ),
+          Container(
+            decoration: BoxDecoration(
+              color: Colors.black,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Image.asset('lib/assets/imgs/itemgroup_3.png'),
+          ),
+        ],
+      ),
+    );
   }
 }

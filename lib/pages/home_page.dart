@@ -108,7 +108,10 @@ class HomePage extends StatelessWidget {
                     ? Axis.vertical
                     : Axis.horizontal,
                 children: [
-                  TextTainer('Pionnière du cinéma', 'text'),
+                  TextTainer(
+                    'Pionnière du cinéma',
+                    "Présentée du 10 janvier au 4 février 2025, cette exposition a retracé le parcours exceptionnel d'Ida Lupino, actrice emblématique et pionnière derrière la caméra. À travers images et extraits marquants, elle a mis en lumière une femme visionnaire qui a durablement marqué l’histoire du cinéma.",
+                  ),
                   Image.asset(
                     width: 712,
                     height: 305,
@@ -137,7 +140,10 @@ class HomePage extends StatelessWidget {
                     ? Axis.vertical
                     : Axis.horizontal,
                 children: [
-                  TextTainer('Une icône du cinéma', 'text'),
+                  TextTainer(
+                    'Une icône du cinéma',
+                    "Présentée du 5 au 31 janvier 2025, cette exposition a rendu hommage à Bette Davis, légende intemporelle du cinéma. À travers des images emblématiques et des extraits de ses plus grands films, elle a célébré une actrice audacieuse au charisme inégalé, symbole de force et de modernité à Hollywood.",
+                  ),
                   Image.asset(
                     width: 712,
                     height: 305,

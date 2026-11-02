@@ -19,7 +19,7 @@ class RedTainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(25, 33, 25, 10),
+      padding: EdgeInsets.fromLTRB(25, 33, 25, 30),
       width: width,
       height: height,
       decoration: BoxDecoration(
@@ -27,6 +27,7 @@ class RedTainer extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(30)),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
@@ -36,7 +37,15 @@ class RedTainer extends StatelessWidget {
               Image.asset(icon),
             ],
           ),
-          TextButton(onPressed: () {}, child: Text(textonbutton)),
+          TextButton(
+            onPressed: () {},
+            child: Text(
+              textonbutton,
+              style: TextTheme.of(
+                context,
+              ).bodySmall!.copyWith(color: Colors.white),
+            ),
+          ),
         ],
       ),
     );
