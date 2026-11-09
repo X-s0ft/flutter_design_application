@@ -9,11 +9,71 @@ class LocationPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return HolderWidget(
       Wrap(
+        direction: .horizontal,
         children: [
-          Text('Alice Guy Blaché', style: TextStyle(color: Colors.black)),
-          Text(
-            "Du 24 mars au 24 mai 2025 de 10H à 18H \n22 Rue du Départ, 75015 Paris",
-            style: TextStyle(color: Colors.black),
+          Wrap(
+            direction: .vertical,
+            children: [
+              Text(
+                'Alice Guy Blaché',
+                style: TextStyle(color: Colors.black),
+              ), //TODO: Заменить из готовых
+              Text(
+                "Du 24 mars au 24 mai 2025 de 10H à 18H",
+                style: TextStyle(
+                  color: Colors.black,
+                ), //TODO: Заменить из готовых
+              ),
+              Text(
+                "22 Rue du Départ, 75015 Paris",
+                style: TextStyle(
+                  color: Colors.black,
+                ), //TODO: Заменить из готовых
+              ),
+              Wrap(
+                direction: .horizontal,
+                children: [
+                  Image.asset('', width: 353, height: 591), //TODO: Добавить фотографию
+                  Wrap(
+                    direction: .vertical,
+                    children: [
+                      RedTainer(
+                        "Découvrez dès maintenant",
+                        "Réservez vos billets",
+                      ),
+                      Container(
+                        padding: .all(20),
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.all(.circular(30)),
+                        ),
+                        width: 445,
+                        height: 400,
+                        child: Column(
+                          spacing: 20,
+                          children: [
+                            Text(
+                              "Studio24 vous invite à découvrir l'univers fascinant d'Alice Guy Blaché, la première réalisatrice de l'histoire du cinéma. Plongez dans le parcours exceptionnel de cette femme visionnaire qui a marqué l'industrie cinématographique par son audace et sa créativité.",
+                              softWrap: true,
+                              style: TextStyle(
+                                fontSize: 20,
+                              ), //TODO: Заменить из готовых
+                            ),
+                            Text(
+                              "Installée au cœur de Paris, l'exposition propose une immersion captivante à travers des archives inédites, des projections et des installations interactives.",
+                              softWrap: true,
+                              style: TextStyle(
+                                fontSize: 20,
+                              ), //TODO: Заменить из готовых
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
           ),
           Container(
             decoration: BoxDecoration(

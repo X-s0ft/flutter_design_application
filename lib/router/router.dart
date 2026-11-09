@@ -1,4 +1,3 @@
-// TODO: Сделать навигацию
 import 'package:flutter_design_application/pages/contact_page.dart';
 import 'package:flutter_design_application/pages/home_page.dart';
 import 'package:flutter_design_application/pages/location_page.dart';

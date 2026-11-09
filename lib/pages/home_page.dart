@@ -85,9 +85,6 @@ class HomePage extends StatelessWidget {
                   RedTainer(
                     'Vous avez des questions ?',
                     'Contactez-nous',
-                    'lib/assets/imgs/vector.png',
-                    479,
-                    212,
                   ),
                 ],
               ),

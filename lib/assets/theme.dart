@@ -38,4 +38,11 @@ final thememain = ThemeData(
       foregroundColor: noir,
     ),
   ),
+
+  outlinedButtonTheme: OutlinedButtonThemeData(
+    style: ButtonStyle(
+      backgroundColor: .all(rouge),
+      foregroundColor: .all(blanc),
+    ),
+  ),
 );

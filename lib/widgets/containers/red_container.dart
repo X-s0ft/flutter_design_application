@@ -6,22 +6,19 @@ class RedTainer extends StatelessWidget {
   const RedTainer(
     this.leadertext,
     this.textonbutton,
-    this.icon,
-    this.width,
-    this.height, {
+
+    {
     super.key,
   });
   final String leadertext;
   final String textonbutton;
-  final String icon;
-  final double height;
-  final double width;
+
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.fromLTRB(25, 33, 25, 30),
-      width: width,
-      height: height,
+      width: 400,
+      height: 200,
       decoration: BoxDecoration(
         color: rouge,
         borderRadius: BorderRadius.all(Radius.circular(30)),
@@ -34,7 +31,7 @@ class RedTainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(leadertext, style: TextStyle(color: Colors.white)),
-              Image.asset(icon),
+              Image.asset('lib/assets/imgs/vector.png'),
             ],
           ),
           TextButton(
