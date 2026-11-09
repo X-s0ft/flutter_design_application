@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_design_application/widgets/containers/all_containers.dart';
 import 'package:flutter_design_application/widgets/holder_widget.dart';
 
 class LocationPage extends StatelessWidget {
@@ -9,7 +10,6 @@ class LocationPage extends StatelessWidget {
     return HolderWidget(
       Wrap(
         children: [
-          Col
           Text('Alice Guy Blaché', style: TextStyle(color: Colors.black)),
           Text(
             "Du 24 mars au 24 mai 2025 de 10H à 18H \n22 Rue du Départ, 75015 Paris",

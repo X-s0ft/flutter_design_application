@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class PlatformsTainer extends StatelessWidget {
-  const PlatformsTainer(this.btntext, {super.key});
+  const PlatformsTainer(this.btntext, this.colorbtn, {super.key});
   final String btntext;
+  final Color colorbtn;
   @override
   Widget build(BuildContext context) {
     return Container(
