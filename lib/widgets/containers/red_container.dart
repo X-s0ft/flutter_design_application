@@ -1,15 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../../assets/colors.dart';
 
 class RedTainer extends StatelessWidget {
-  const RedTainer(
-    this.leadertext,
-    this.textonbutton,
-
-    {
-    super.key,
-  });
+  const RedTainer(this.leadertext, this.textonbutton, {super.key});
   final String leadertext;
   final String textonbutton;
 
@@ -28,9 +22,15 @@ class RedTainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: .center,
+            spacing: 190,
             children: [
-              Text(leadertext, style: TextStyle(color: Colors.white)),
+              Text(
+                leadertext,
+                style: TextTheme.of(
+                  context,
+                ).bodySmall!.copyWith(color: Colors.white),
+              ),
               Image.asset('lib/assets/imgs/vector.png'),
             ],
           ),
@@ -38,9 +38,13 @@ class RedTainer extends StatelessWidget {
             onPressed: () {},
             child: Text(
               textonbutton,
-              style: TextTheme.of(
-                context,
-              ).bodySmall!.copyWith(color: Colors.white),
+              style: TextStyle(
+                shadows: [Shadow(color: Colors.white, offset: Offset(0, -5))],
+                color: Colors.transparent,
+                decoration: TextDecoration.underline,
+                decorationColor: Colors.white,
+                decorationThickness: 4,
+              ),
             ),
           ),
         ],

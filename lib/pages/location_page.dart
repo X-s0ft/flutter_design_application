@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_design_application/widgets/containers/all_containers.dart';
 import 'package:flutter_design_application/widgets/holder_widget.dart';
 
@@ -9,17 +9,21 @@ class LocationPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return HolderWidget(
       Wrap(
+        crossAxisAlignment: .end,
+
+        spacing: 32,
         direction: .horizontal,
         children: [
           Wrap(
+            spacing: 13,
             direction: .vertical,
             children: [
               Text(
-                'Alice Guy Blaché',
+                'Alice Guy \nBlaché',
                 style: TextStyle(color: Colors.black),
               ), //TODO: Заменить из готовых
               Text(
-                "Du 24 mars au 24 mai 2025 de 10H à 18H",
+                "Du 24 mars au 24 mai 2025 \nde 10H à 18H",
                 style: TextStyle(
                   color: Colors.black,
                 ), //TODO: Заменить из готовых
@@ -31,14 +35,18 @@ class LocationPage extends StatelessWidget {
                 ), //TODO: Заменить из готовых
               ),
               Wrap(
+                crossAxisAlignment: .end,
+                spacing: 24,
                 direction: .horizontal,
                 children: [
-                  Image.asset('', width: 353, height: 591), //TODO: Добавить фотографию
+                  Image.asset('lib/assets/imgs/map.png'),
                   Wrap(
+                    alignment: .start,
+                    spacing: 25,
                     direction: .vertical,
                     children: [
                       RedTainer(
-                        "Découvrez dès maintenant",
+                        "Découvrez dès \nmaintenant",
                         "Réservez vos billets",
                       ),
                       Container(

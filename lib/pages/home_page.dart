@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_design_application/assets/colors.dart';
 import 'package:flutter_design_application/widgets/containers/all_containers.dart';
 import 'package:flutter_design_application/widgets/holder_widget.dart';
@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
                   children: [
                     Expanded(
                       child: Column(
-                        spacing: 30,
+                        spacing: 5,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
@@ -41,8 +41,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Text(
                             'Alice Guy Blaché',
-                            softWrap: true,
-                            style: TextTheme.of(context).titleMedium,
+                            style: TextTheme.of(context).titleSmall,
                           ),
                           Text(
                             'Du 24 mars au 24 mai 2025 de 10H à 18H',
@@ -82,10 +81,7 @@ class HomePage extends StatelessWidget {
                     : Axis.vertical,
                 children: [
                   EhibitionTainer(),
-                  RedTainer(
-                    'Vous avez des questions ?',
-                    'Contactez-nous',
-                  ),
+                  RedTainer('Vous avez des \nquestions ?', 'Contactez-nous'),
                 ],
               ),
             ],
